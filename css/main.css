@@ -1,0 +1,73 @@
+html{
+	background-color: rgb(0,0,0);
+	font-family: 'Raleway', sans-serif;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	position: absolute;
+	width: 30%;
+	margin-left: 35%;
+	background-color: rgba(235,235,235,0.7);
+	height: 100%;
+
+}
+.appbackground{
+	position: fixed;
+	left: 0;
+	margin-left: 35%;
+	margin-top: 3.1%;
+	right: 0;
+	z-index: 1;
+	display: block;
+	background: url('../img/temp_wall.jpg') no-repeat;
+	height: 800px;
+	width:30%;
+
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);	
+}
+
+.app{
+	position: fixed;
+	width: 30%;
+	left: 0;
+	right: 0;
+	margin-left: 35%;
+	margin-top: 3%;
+	z-index: 999;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	height: 800px;
+}
+
+h1{
+	background-color: rgba(235,235,235,0.7);
+	padding: 10px 0px;
+	text-align: center;
+}
+
+.blue, .white{
+	padding: 50px;
+	margin: 0;
+	font-size: 1.5em;
+}
+
+p{
+	text-align: center;
+}
+
+.blue{
+	background-color: rgba(80,220,230,0.7);
+}
+
+.white{
+	background-color: rgba(235,235,235,0.7);
+}
