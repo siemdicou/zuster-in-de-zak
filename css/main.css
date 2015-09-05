@@ -43,8 +43,6 @@ body{
 	margin-left: 35%;
 	margin-top: 3%;
 	z-index: 999;
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
 	height: 800px;
 }
 
