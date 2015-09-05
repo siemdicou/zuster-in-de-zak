@@ -24,14 +24,18 @@
 	</form>
 
 	<?php
+
+	require_once 'config/config.php';
+	require_once 'library/database.php';
+
 	$action = (empty($_GET['action'])) ? '' : $_GET['action'];
-	$request_username = (empty($_POST['username'])) ? '' : $_POST['username'];
+	$request_username = (empty($_POST['email'])) ? '' : $_POST['email'];
 	$request_password = (empty($_POST['password'])) ? '' : $_POST['password'];
 	
 	if ($request_username != '' && $request_password != '')
 	{
-	$result = $mysqli->query("SELECT * FROM users 
-								WHERE username = '".$request_username."' AND password = '".$request_password."'");	
+	$result = $mysqli->query("SELECT * FROM patients
+								WHERE email = '".$request_username."' AND password = '".$request_password."'");	
 	$user_match_count = $result->num_rows;
 	
 	if ($user_match_count == 1)
