@@ -7,6 +7,7 @@
 </head>
 <body>
 <div class="wrapper">
+	<div class="appbackground"></div>
 	<div class="app">
 		<h1>Titel</h1>
 		<?php

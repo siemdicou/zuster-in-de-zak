@@ -16,14 +16,38 @@ body{
 	height: 100%;
 
 }
+.appbackground{
+	position: fixed;
+	left: 0;
+	margin-left: 35%;
+	margin-top: 3.1%;
+	right: 0;
+	z-index: 1;
+	display: block;
+	background: url('../img/temp_wall.jpg') no-repeat;
+	height: 800px;
+	width:30%;
+
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);	
+}
 
 .app{
-	margin-top: 15%;
+	position: fixed;
+	width: 30%;
+	left: 0;
+	right: 0;
+	margin-left: 35%;
+	margin-top: 3%;
+	z-index: 999;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
 	height: 800px;
-	background-color: rgba(235,235,235,0.7);
-	background: url('../img/temp_wall.jpg');
+	
+
 }
 
 h1{
