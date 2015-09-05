@@ -10,8 +10,8 @@
 	<div class="app">
 		<h1>Titel</h1>
 		<?php
+		$menu = ["Quizz","Mijn gegevens","Agenda","Pillen","Dagboek"];
 			for ($i=0; $i < 5; $i++) { 
-				$menu = ["Quizz","Mijn gegevens","Agenda","Pillen","Dagboek"];
 				if ($i%2) {
 					
 					echo "<p class='white'>".$menu[$i]."</p>";
