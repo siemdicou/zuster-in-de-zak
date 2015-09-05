@@ -10,7 +10,7 @@
 	<div class="app">
 		<h1>Titel</h1>
 		<?php
-		$menu = ["Quizz","Mijn gegevens","Agenda","Pillen","Dagboek"];
+		$menu = ["Quizz","Profiel","Agenda","Dagboek","Nood"];
 			for ($i=0; $i < 5; $i++) { 
 				if ($i%2) {
 					
