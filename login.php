@@ -5,16 +5,20 @@
 </head>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <body>
+<?php 	require_once 'config/config.php';
+	require_once 'library/database.php';
+
+	 ?>
 <div class="wrapper">
-	<form action="action=?login">
+	<form action="login.php/action=?login" method="POST">
 		<table>
 			<tr>
 				<td>Email:</td>
-				<td><input type="text" required></td>
+				<td><input type="text" name="mail" required></td>
 			</tr>
 			<tr>
 				<td>Wachtwoord:</td>
-				<td><input type="password" name="" required></td>
+				<td><input type="password" name="password" required></td>
 			</tr>
 			<tr>
 				<td></td>
@@ -25,28 +29,37 @@
 
 	<?php
 
-	require_once 'config/config.php';
-	require_once 'library/database.php';
-
+	session_start();
 	$action = (empty($_GET['action'])) ? '' : $_GET['action'];
-	$request_username = (empty($_POST['email'])) ? '' : $_POST['email'];
+	$request_mail = (empty($_POST['mail'])) ? '' : $_POST['mail'];
 	$request_password = (empty($_POST['password'])) ? '' : $_POST['password'];
+
+if ($action="login"){
+
 	
-	if ($request_username != '' && $request_password != '')
+	if ($request_mail != '' && $request_password != '')
 	{
-	$result = $mysqli->query("SELECT * FROM patients
-								WHERE email = '".$request_username."' AND password = '".$request_password."'");	
-	$user_match_count = $result->num_rows;
-	
-	if ($user_match_count == 1)
-	{
-		$user_row = $result->fetch_assoc();
-		$_SESSION['username'] = $user_row['username'];
+	$result = $mysqli->query("SELECT * FROM patient
+								WHERE mail = '".$request_mail."' AND password = '".$request_password."'");	
+	$patient_match_count = $result->num_rows;
+		
+		if ($patient_match_count == 1)
+		{
+			$patient_row = $result->fetch_assoc();
+			$_SESSION['mail'] = $patient_row['mail'];
+		}
+		else
+		{
+			echo '<h2>Inloggen mislukt</h2>';
+		}
 	}
-	else
-	{
-		echo '<h2>Inloggen mislukt</h2>';
-	}
+}
+if (isset($_SESSION['mail']));
+{
+	header('location:index.php');
+else
+{
+	echo "faal";
 }
 	 ?>
 </div>
