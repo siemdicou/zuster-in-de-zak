@@ -58,8 +58,8 @@ if ($action="login"){
 }
 if (isset($_SESSION['mail']))
 {
-	// header("location:index.php");
-	echo "hoi";
+	echo "<a href='../profiel.php'<p>Profiel</p></a>";
+
 }
 else
 {

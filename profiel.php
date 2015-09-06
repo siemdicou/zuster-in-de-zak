@@ -1,7 +1,6 @@
 <?php
 	require_once 'config/config.php';
 	require_once 'library/database.php';
-	require_once 'login.php';
 ?>
 <?php
 if ($mail && $password) {
