@@ -14,7 +14,6 @@
 		$menu = ["quiz","profiel","agenda","dagboek","nood"];
 			for ($i=0; $i < 5; $i++) { 
 				if ($i%2) {
-					
 					echo "<p class='white'><a href='".$menu[$i].".php'>".$menu[$i]."</a></p>";
 				}
 				else{
