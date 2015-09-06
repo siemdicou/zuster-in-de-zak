@@ -110,3 +110,9 @@ p a{
 	background-color: rgba(235,235,235,0.7);
 	padding: 2rem 0 2rem 0;
 }
+textarea{
+	margin: 12.5% ;
+}
+#dagboekSend{
+	margin-left: 42%;
+}
