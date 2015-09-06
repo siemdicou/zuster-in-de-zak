@@ -11,7 +11,7 @@
 	<div class="app">
 		<h1>Titel</h1>
 		<?php
-		$menu = ["Quizz","Profiel","Agenda","Dagboek","Nood"];
+		$menu = ["quiz","profiel","agenda","dagboek","nood"];
 			for ($i=0; $i < 5; $i++) { 
 				if ($i%2) {
 					
