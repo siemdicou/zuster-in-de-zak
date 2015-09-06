@@ -1,16 +1,16 @@
-<?php 
-
-//  echo "<form>";
-// 	echo "<input type="text" name=log>";
-
-// 	echo"</form>";
-
-// $sql = "INSERT INTO patient (mail, text, day)
-// VALUES ('John', 'Doe', 'john@example.com')";
-
- ?>
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dagboek</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="wrapper">
+<textarea rows="15" cols="50"autofocus required> vul hier u dagboek in  </textarea>
+<input type="submit">
+</div>
+</body>
+</html>
    
 
-<textarea > vul hier u dagboek in </textarea>
-<input type="submit">
+
