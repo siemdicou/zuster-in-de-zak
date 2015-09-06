@@ -5,9 +5,7 @@
 </head>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <body>
-<?php 	
-	
-	require_once 'config/config.php';
+<?php 	require_once 'config/config.php';
 	require_once 'library/database.php';
 
 	 ?>
@@ -58,14 +56,13 @@ if ($action="login"){
 }
 if (isset($_SESSION['mail']))
 {
-	// header("location:index.php");
-	echo "hoi";
+	include "index.php";
 }
 else
 {
 	echo "faal";
 }
-?>
+	 ?>
 </div>
 </body>
 </html>
