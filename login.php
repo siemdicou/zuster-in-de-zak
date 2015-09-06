@@ -54,6 +54,7 @@ if ($action="login"){
 		}
 	}
 }
+
 if (isset($_SESSION['mail']))
 {
 	include "index.php";
