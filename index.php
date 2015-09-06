@@ -16,7 +16,6 @@
 				if ($i%2) {
 					
 					echo "<p class='white'>".$menu[$i]."</p>";
-					
 				}
 				else{
 					echo "<p class='blue'>".$menu[$i]."</p>";
