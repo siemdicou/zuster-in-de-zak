@@ -114,5 +114,10 @@ function NextQuestion() {
 
 }
 
+function click(i){
+    console.log("hello");
+    document.getElementById(i).style.visibility='visible';
+}
+
 window.addEventListener("load", Start,false);
 window.setInterval(Update, 150);

@@ -69,3 +69,29 @@ p{
 .white{
 	background-color: rgba(235,235,235,0.7);
 }
+
+#QuestionField{
+	background-color: rgba(235,235,235,0.7);
+	font-size: 2em;
+	margin-top: 5%;
+	padding-left: 2%;
+}
+
+.blue1, .white1{
+	padding: 20px;
+	text-align: center;
+	margin: 0;
+	font-size: 1.5em;
+}
+
+.blue1{
+	background-color: rgba(80,220,230,0.7);
+}
+
+.white1{
+	background-color: rgba(235,235,235,0.7);
+}
+
+.blue1:active{
+	background-color: red; 
+}

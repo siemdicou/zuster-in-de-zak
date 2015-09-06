@@ -78,3 +78,9 @@ function QA(idNmbr, AmountOfAnswers, Question, AnswerA, AnswerB, AnswerC, Answer
     }
 
 }
+
+
+function click(i){
+    console.log("hello");
+    document.getElementById("button").style.visibility='visible';
+}
