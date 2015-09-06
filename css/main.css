@@ -82,6 +82,10 @@ p a{
 	padding-left: 2%;
 }
 
+.questions{
+	margin-top:3rem;
+}
+
 .blue1, .white1{
 	padding: 20px;
 	text-align: center;
@@ -97,6 +101,12 @@ p a{
 	background-color: rgba(235,235,235,0.7);
 }
 
-.blue1:active{
-	background-color: red; 
+.nextbutton{
+	border-style: none;
+	width: 100%;
+	margin-top: 3rem;
+	font-size: 2rem;
+	font-family: 'Raleway', sans-serif;
+	background-color: rgba(235,235,235,0.7);
+	padding: 2rem 0 2rem 0;
 }

@@ -7,6 +7,7 @@ var aQ, bQ, cQ, dQ, eQ;
 var Aa, Ab, Ac, Ad, Ae;
 var QuestionId = 0;
 var score = 0;
+var total = document.getElementById("total");
 
 function get(x) {
     var temp = document.getElementById(x);
@@ -103,20 +104,19 @@ function NextQuestion() {
     } else {
         if (score <= 50) {
             console.log("niks");
+            total.innerHTML = score +"Niks";
         } else if (score >= 51 && score <= 100) {
             console.log("lage kans");
+            total.innerHTML = score +"lage kans";
         } else if (score >= 101 && score <= 150) {
             console.log("kans op");
+            total.innerHTML = score +"kans op";
         } else if (score > 150) {
             console.log("hoge kans");
+            total.innerHTML = score +"hoge kans";
         }
     }
 
-}
-
-function click(i){
-    console.log("hello");
-    document.getElementById(i).style.visibility='visible';
 }
 
 window.addEventListener("load", Start,false);
