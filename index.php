@@ -15,10 +15,10 @@
 			for ($i=0; $i < 5; $i++) { 
 				if ($i%2) {
 					
-					echo "<p class='white'>".$menu[$i]."</p>";
+					echo "<p class='white'><a href='".$menu[$i].".php'>".$menu[$i]."</a></p>";
 				}
 				else{
-					echo "<p class='blue'>".$menu[$i]."</p>";
+					echo "<p class='blue'><a href='".$menu[$i].".php'>".$menu[$i]."</a></p>";
 				}
 			}
 		?>

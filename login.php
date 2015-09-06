@@ -54,11 +54,9 @@ if ($action="login"){
 		}
 	}
 }
-
-if (isset($_SESSION['mail']))
+if (isset($_SESSION['mail']));
 {
-	include "index.php"
-}
+	header('location:index.php');
 else
 {
 	echo "faal";
